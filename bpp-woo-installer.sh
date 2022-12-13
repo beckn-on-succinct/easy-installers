@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export woocommerce_adaptor_repo="git@github.com:venkatramanm/bpp.woocommerce.git" 
+export woocommerce_adaptor_repo="https://github.com/venkatramanm/bpp.woocommerce.git" 
 
 tooldir=`dirname $0`
 tooldir=$PWD/$tooldir
@@ -9,7 +9,7 @@ application_dir="$tooldir/site"
 mkdir -p $application_dir
 cd $application_dir
 
-for repo in "git@github.com:venkatramanm/common.git" "git@github.com:venkatramanm/reflection.git" "git@github.com:venkatramanm/swf-all.git" "git@github.com:venkatramanm/swf-plugin-bootstrap.git" "git@github.com:venkatramanm/beckn-sdk-java.git" "git@github.com:venkatramanm/swf-plugin-beckn.git" "git@github.com:venkatramanm/bpp.shell.git" $woocommerce_adaptor_repo
+for repo in "https://github.com/venkatramanm/common.git" "https://github.com/venkatramanm/reflection.git" "https://github.com/venkatramanm/swf-all.git" "https://github.com/venkatramanm/swf-plugin-bootstrap.git" "https://github.com/venkatramanm/beckn-sdk-java.git" "https://github.com/venkatramanm/swf-plugin-beckn.git" "https://github.com/venkatramanm/bpp.shell.git" $woocommerce_adaptor_repo
 do 
     echo "Building $repo"
     dir=`basename $repo |sed 's/.git//g'`
