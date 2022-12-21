@@ -9,7 +9,7 @@ application_dir="$tooldir/site"
 mkdir -p $application_dir
 cd $application_dir
 
-for repo in "https://github.com/venkatramanm/common.git" "https://github.com/venkatramanm/reflection.git" "https://github.com/venkatramanm/swf-all.git" "https://github.com/venkatramanm/swf-plugin-bootstrap.git" "https://github.com/venkatramanm/beckn-sdk-java.git" "https://github.com/venkatramanm/swf-plugin-beckn.git" "https://github.com/venkatramanm/bpp.shell.git" $woocommerce_adaptor_repo
+for repo in "https://github.com/venkatramanm/common.git" "https://github.com/venkatramanm/reflection.git" "https://github.com/venkatramanm/swf-all.git" "https://github.com/venkatramanm/swf-plugin-bootstrap.git" "https://github.com/venkatramanm/beckn-sdk-java.git" "https://github.com/venkatramanm/swf-plugin-beckn.git" "https://github.com/venkatramanm/bpp.shell.git" "https://github.com/venkatramanm/bpp.search.git" $woocommerce_adaptor_repo
 do 
     echo "Building $repo"
     dir=`basename $repo |sed 's/.git//g'`
