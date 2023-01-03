@@ -28,7 +28,7 @@ cd $application_dir/
 if [ ! -d "${adaptor}.app" ] 
 then
 # force user input from tty
-mvn archetype:generate -DarchetypeGroupId=com.github.venkatramanm.swf-all -DarchetypeArtifactId=swf-bpp-archetype -DarchetypeCatalog=local -DgroupId=in.succinct -DartifactId=${adaptor}.app -Dadaptor=${adaptor} -Dversion=1.0-SNAPSHOT < `tty` 
+mvn archetype:generate -DarchetypeGroupId=com.github.venkatramanm.swf-all -DarchetypeArtifactId=swf-bpp-archetype -DarchetypeCatalog=local -DgroupId=in.succinct -DartifactId=${adaptor}.app -Dadaptor=${adaptor} -Dversion=1.0-SNAPSHOT < /dev/tty
 fi
 cd ${adaptor}.app 
 mvn clean compile 
